@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Aula 03</title>
+    <meta charset="utf-8" />
+    <script>
+        var total = 1 + 2;
+        console.log("oi tudo bem: " + total)
+        console.log("teste do console")
+
+
+        var pessoa =
+        {
+            nome: "mike rodrigues de lima",
+            idade: 31,
+            status: true
+        }
+        console.log(pessoa);
+
+        console.log(pessoa.status == true ? pessoa.nome += " Ativo" : pessoa.nome += "Não Ativo");
+
+        var array = ["a", "b", "c"];
+
+        for (val of array) {
+            document.write(val)
+        }
+
+        for (var i = 0; i < 20; i++) {
+            document.writeln("<p>"+i+"</p>")
+        }
+        function load() {
+            document.getElementById("txt").value = total;
+        }
+      
+    </script>
+</head>
+<body onload="load">
+    <input  type="text" id="txt"/>
+</body>
+</html>
