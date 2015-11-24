@@ -67,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Aula05.html" />
+    <Content Include="Aula06.html" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -80,7 +81,9 @@
     <Content Include="Aula03.html" />
     <Content Include="Aula04.html" />
     <Content Include="Scripts\angular.min.js" />
-    <Content Include="Scripts\aula08.appSaudacao.module.js" />
+    <Content Include="Scripts\app.module.js" />
+    <Content Include="Scripts\aula05.appSaudacao.module.js" />
+    <Content Include="Scripts\aula06.controller.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
