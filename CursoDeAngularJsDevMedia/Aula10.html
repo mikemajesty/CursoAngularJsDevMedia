@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Aula 10</title>
+	<meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/app.module.js"></script>
+    <script src="Scripts/aula10.filter.js"></script>
+    <!--Controller-->
+    <script src="Scripts/aula10.controller.js"></script>
+
+</head>
+<body ng-controller="Aula10controller">
+    {{'mike rodrigues de lima' | uppercase}}
+    {{(pessoa | json)| uppercase}}
+    {{'Mike limão' | retornaoi}}
+    {{pessoa.nome | retornaoi}}
+</body>
+</html>

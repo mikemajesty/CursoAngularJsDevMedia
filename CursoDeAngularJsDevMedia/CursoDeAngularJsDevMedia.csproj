@@ -76,6 +76,7 @@
     <Content Include="content\materialize\font\material-design-icons\LICENSE.txt" />
     <Content Include="content\materialize\font\material-design-icons\Material-Design-Icons.svg" />
     <Content Include="packages.config" />
+    <Content Include="Scripts\aula10.controller.js" />
     <Content Include="Scripts\aula09.service.js" />
     <Content Include="Scripts\aula09.controller.js" />
     <Content Include="Scripts\aula08.controller.js" />
@@ -101,6 +102,8 @@
     <Content Include="content\materialize\font\material-design-icons\Material-Design-Icons.eot" />
     <Content Include="Scripts\aula09.pessoa.factory.js" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
+    <Content Include="Aula10.html" />
+    <Content Include="Scripts\aula10.filter.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
     <Content Include="Scripts\jquery-2.1.1.min.map" />
