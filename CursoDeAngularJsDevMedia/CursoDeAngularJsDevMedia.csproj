@@ -70,11 +70,14 @@
     <Content Include="Aula06.html" />
     <Content Include="Aula07.html" />
     <Content Include="Aula08.html" />
+    <Content Include="Aula09.html" />
     <Content Include="content\materialize\css\materialize.css" />
     <Content Include="content\materialize\css\materialize.min.css" />
     <Content Include="content\materialize\font\material-design-icons\LICENSE.txt" />
     <Content Include="content\materialize\font\material-design-icons\Material-Design-Icons.svg" />
     <Content Include="packages.config" />
+    <Content Include="Scripts\aula09.service.js" />
+    <Content Include="Scripts\aula09.controller.js" />
     <Content Include="Scripts\aula08.controller.js" />
     <Content Include="Scripts\aula07.controller.js" />
     <Content Include="content\materialize\font\roboto\Roboto-Thin.woff2" />
@@ -96,6 +99,7 @@
     <Content Include="content\materialize\font\material-design-icons\Material-Design-Icons.woff" />
     <Content Include="content\materialize\font\material-design-icons\Material-Design-Icons.ttf" />
     <Content Include="content\materialize\font\material-design-icons\Material-Design-Icons.eot" />
+    <Content Include="Scripts\aula09.pessoa.factory.js" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
