@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Aula 08</title>
+    <meta charset="utf-8" />
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/app.module.js"></script>
+    <!--Controller-->
+    <script src="Scripts/aula08.controller.js"></script>
+
+    <style type="text/css">
+        input.ng-invalid.ng-touched {
+            border-color: red;
+        }
+
+        input.ng-valid.ng-touched {
+            border-color: white;
+        }
+    </style>
+</head>
+<body ng-controller="aula08.controller" ng-submit="salvarPessoa(pessoa)">
+    <form novalidate name="form">
+        <p>
+            Nome: <input type="text" required ng-model="pessoa.nome" name="nome" />
+        </p>
+        <div ng-show="form.$submitted || form.nome.$touched">
+            <div ng-show="form.nome.$error.required" class="text-darken-2">
+                O campo deve ser preenchido.
+            </div>
+        </div>
+        <p>
+            E-mail: <input type="email" required ng-model="pessoa.email" name="email" />
+        </p>
+        <div ng-show="form.$submitted || form.email.$touched">
+            <div ng-show="form.email.$error.required">
+                O campo deve ser preenchido.
+            </div>
+            <div ng-show="form.email.$error.email">
+               Email invalido.
+            </div>
+        </div>
+        <p>
+            Sexo: <br />
+            <input type="radio" value="M" ng-model="pessoa.sexo" /> Masculino
+            <br />
+            <input type="radio" value="F" ng-model="pessoa.sexo" /> Feminino
+        </p>
+        <p>
+            <input type="submit" value="Salvar" ng-disabled="form.$invalid" />
+            <input type="button" value="Resetar" />
+        </p>
+        <p>
+            Estado:
+            <select ng-model="pessoa.estado">
+                <option ng-repeat="estado in estados" ng-selected="estado==pessoa.estado" value="{{estado}}">{{estado}}</option>
+            </select>
+        </p>
+        <pre>
+{{pessoa | json}}
+{{estados | json}}
+</pre>
+    </form>
+</body>
+</html>
