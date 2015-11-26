@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Aula 11</title>
+	<meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-route.min.js"></script>
+    <script src="Scripts/aula11.controller.js"></script>
+    <base href="/" />
+</head>
+<body ng-controller="Aula11controller">
+    <p>Cabeçalho da página</p>
+    <ul>
+        <li>
+            <a href="/">Inicial</a>
+            <a href="pagina1">pagina 1</a>
+            <a href="pagina2/1">pagina 2</a>
+        </li>
+    </ul>
+    <div ng-view>
+        
+    </div>
+   
+    <p>Rodapé da página</p>
+</body>
+</html>
