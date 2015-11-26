@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Aula 12</title>
+    <meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-sanitize.js"></script>
+    <script src="Scripts/aula12.controller.js"></script>
+
+    <style>
+        /*melhora object efeito defs carregamento*/ 
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+            display: none !important;
+        }
+
+        .classngClass {
+            font-size: 50px;
+        }
+    </style>
+
+
+</head>
+<body ng-controller="aula12controller">
+    <h1>ngShow e ngHide - Mostra ou esconde um controle</h1>
+    <div ng-show="mostrar">Esse bloco é exibido quando mostrar = true</div>
+    <div ng-hide="mostrar">Esse bloco é exibido quando mostrar = false</div>
+    <input ng-model="mostrar" type="checkbox" />
+    <h1>Alemento 1</h1>
+    <a href="">Click me</a>
+
+    <h1>ngBindingHtml  - renderiza conteudo dentro de uma tag html no controller</h1>
+    <p ng-bind-html="variavelHtml"></p>
+
+
+    <h1>ngClass - Adicionar ou retirar um classe </h1>
+    <div ng-class="minhaClass">Teste</div>
+    <button type="button" ng-click="minhaClass='classngClass'">Adicionar class</button>
+    <button type="button" ng-click="minhaClass=''">Retirar class</button>
+
+    <h1>ngCloack - Previne que variavel do tipo [{{}}] seja exibida no browser</h1>
+    <p>{{variavelCloack}}</p>
+
+    <h1>ngSrc - Mudar foto</h1>
+    <img  ng-src="img/{{minhaFoto}}"/>
+    <br />
+    <button type="button" ng-click="minhaFoto='foto1.png'">Foto 1</button>
+    <button type="button" ng-click="minhaFoto='foto2.png'">Foto 2</button>
+</body>
+</html>
