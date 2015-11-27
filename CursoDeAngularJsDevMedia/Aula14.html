@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Aula 14</title>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/app.module.js"></script>
+    <script src="Scripts/aula14.controller.js"></script>
+
+    <meta charset="utf-8" />
+</head>
+<body ng-controller="aula14controller">
+
+    <p ng-repeat="pessoa in dados">Nome: {{pessoa.nome}} - Idade{{pessoa.idade}}</p>
+    <button type="button" ng-click="carregaDados()">Carrega dados</button>
+    <hr />
+    <input type="text" ng-model="cidade" />
+    <button ng-click="carregaPrevisao()">Previsão do Tempo</button><br />
+    <img src="http://openweathermap.org/img/w/{{icone}}.png" ng-show="icone!=''" />
+    {{descricaoTempo}}
+</body>
+</html>

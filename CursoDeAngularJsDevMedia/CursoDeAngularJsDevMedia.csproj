@@ -75,6 +75,7 @@
     <Content Include="Aula11.Pagina1.html" />
     <Content Include="Aula11.Pagina2.html" />
     <Content Include="Aula12.html" />
+    <Content Include="Aula14.html" />
     <Content Include="Aula13.html" />
     <Content Include="content\materialize\css\materialize.css" />
     <Content Include="content\materialize\css\materialize.min.css" />
@@ -89,6 +90,7 @@
     <Content Include="Scripts\angular-sanitize.js" />
     <Content Include="Scripts\angular-sanitize.min.js" />
     <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\aula14.controller.js" />
     <Content Include="Scripts\aula13.controller.js" />
     <Content Include="Scripts\aula12.controller.js" />
     <Content Include="Scripts\aula11.controller.js" />
@@ -124,6 +126,7 @@
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Aula10.html" />
     <Content Include="Scripts\aula10.filter.js" />
+    <None Include="Scripts\Aula14.dados.json" />
     <Content Include="Scripts\jquery-2.1.1.js" />
     <Content Include="Scripts\jquery-2.1.1.min.js" />
     <Content Include="Scripts\jquery-2.1.1.min.map" />
