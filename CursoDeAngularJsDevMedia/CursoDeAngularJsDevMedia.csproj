@@ -75,6 +75,7 @@
     <Content Include="Aula11.Pagina1.html" />
     <Content Include="Aula11.Pagina2.html" />
     <Content Include="Aula12.html" />
+    <Content Include="Aula13.html" />
     <Content Include="content\materialize\css\materialize.css" />
     <Content Include="content\materialize\css\materialize.min.css" />
     <Content Include="content\materialize\font\material-design-icons\LICENSE.txt" />
@@ -88,6 +89,7 @@
     <Content Include="Scripts\angular-sanitize.js" />
     <Content Include="Scripts\angular-sanitize.min.js" />
     <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\aula13.controller.js" />
     <Content Include="Scripts\aula12.controller.js" />
     <Content Include="Scripts\aula11.controller.js" />
     <Content Include="Scripts\aula10.controller.js" />
