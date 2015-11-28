@@ -1,0 +1,18 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Aula 15</title>
+	<meta charset="utf-8" />
+    <script src="Scripts/jquery-2.1.1.js"></script>
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-resource.min.js"></script>
+    <script src="Scripts/aula15.controller.js"></script>
+    <link href="content/materialize/css/materialize.css" rel="stylesheet" />
+    <script src="Scripts/materialize/materialize.min.js"></script>
+</head>
+<body ng-controller="aula15controller">
+    <button class="btn waves-effect waves-light" ng-click="salvarLivro()" type="button">Salvar Livro</button>
+    <button class="btn-floating btn-large waves-effect waves-light red" ng-click="carregaLivros()" type="button">Carregar Livro</button>
+    <button  class="btn waves-effect waves-light" type="button" ng-click="getLivro(1)">Carregar Livro ID:20</button>
+</body>
+</html>
