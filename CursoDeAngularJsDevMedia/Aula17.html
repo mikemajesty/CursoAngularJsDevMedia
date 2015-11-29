@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Aula 17</title>
+    <meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+
+    <script src="Scripts/angular-animate.min.js"></script>
+
+    <script src="Scripts/aula17.controller.js"></script>
+
+    <style type="text/css">
+        .esconder {
+            padding: 10px;
+            border: 1px solid black;
+            background-color: white;
+        }
+
+        .esconder {
+            -moz-transition: all linear ls;
+            -webkit-transition: all linear ls;
+            transition: all linear ls;
+            -o-transition: all linear ls;
+        }
+
+            .esconder.ng-hide {
+                opacity: 0;
+            }
+
+            .esconder.ng-show {
+                opacity: 1;
+            }
+        /*-------------------------------------------------*/
+        .repetirLista {
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+            .repetirLista.ng-enter {
+                -moz-transition: transition: 2s linear all;
+                -webkit-transition: 2s linear all;
+                -o-transition: transition: 2s linear all;
+                transition: 2s linear all;
+                opacity: 0;
+                background: green;
+            }
+            .repetirLista.ng-enter-active {               
+                opacity:1;
+                background: white;
+            }
+        /*ng-enter quando vc adiciona um item na tela*/
+    </style>
+</head>
+<body ng-controller="Aula17controller" ng-init="mostra=true;itemadd=0;">
+    <input type="checkbox" ng-model="mostra" />
+    <div class="esconder" ng-show="mostra">DevMedia</div>
+    <hr />
+    <input type="text" ng-model="itemadd" />
+    <hr />
+    <button type="button" ng-click="adicionaItem()">Adiciona Item</button>
+    <hr />
+    <div class="repetirLista" ng-repeat="item in itens">{{item}}</div>
+</body>
+</html>

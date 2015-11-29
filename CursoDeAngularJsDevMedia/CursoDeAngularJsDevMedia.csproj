@@ -107,6 +107,7 @@
     <Content Include="Aula13.html" />
     <Content Include="Aula15.html" />
     <Content Include="Aula16.html" />
+    <Content Include="Aula17.html" />
     <Content Include="content\materialize\css\materialize.css" />
     <Content Include="content\materialize\css\materialize.min.css" />
     <Content Include="content\materialize\font\material-design-icons\LICENSE.txt" />
@@ -114,6 +115,8 @@
     <Content Include="img\foto1.png" />
     <Content Include="img\foto2.png" />
     <Content Include="packages.config" />
+    <Content Include="Scripts\angular-animate.js" />
+    <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-resource.js" />
     <Content Include="Scripts\angular-resource.min.js" />
@@ -122,6 +125,7 @@
     <Content Include="Scripts\angular-sanitize.js" />
     <Content Include="Scripts\angular-sanitize.min.js" />
     <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\aula17.controller.js" />
     <Content Include="Scripts\aula16.controller.js" />
     <Content Include="Scripts\aula15.controller.js" />
     <Content Include="Scripts\aula14.controller.js" />
@@ -159,6 +163,7 @@
     <Content Include="Scripts\angular-sanitize.min.js.map" />
     <Content Include="Scripts\angular-resource.min.js.map" />
     <Content Include="Scripts\Aula15.dados.json" />
+    <Content Include="Scripts\angular-animate.min.js.map" />
     <None Include="Scripts\jquery-2.1.1.intellisense.js" />
     <Content Include="Aula10.html" />
     <Content Include="Scripts\aula10.filter.js" />
