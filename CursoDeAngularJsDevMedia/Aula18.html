@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Aula 18</title>
+	<meta charset="utf-8" />
+
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/app.module.js"></script>
+    <script src="Scripts/aula18.controller.js"></script>
+</head>
+<body ng-controller="Aula18controller">
+    <p>{{$location.protocol()}}</p>
+    <p>{{$location.host()}}</p>
+    <p>{{$location.port()}}</p>
+    <p>{{$location.path()}}</p>
+    <p>{{$location.search() | json}}</p>
+    <p>{{$location.search().id}}</p>
+    <p>{{$location.hash()}}</p>
+    <a href="#" ng-click="setID(10)">Link</a>
+    <a href="#" ng-click="setID(09)">Link</a>
+    <a href="#" ng-click="setID(08)">Link</a>
+    <a href="#" ng-click="setID(07)">Link</a>
+    <a href="#" ng-click="setID(06)">Link</a>
+    <a href="#" ng-click="setID(05)">Link</a>
+</body>
+</html>

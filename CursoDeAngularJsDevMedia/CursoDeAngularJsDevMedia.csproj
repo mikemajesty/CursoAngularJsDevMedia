@@ -108,6 +108,7 @@
     <Content Include="Aula15.html" />
     <Content Include="Aula16.html" />
     <Content Include="Aula17.html" />
+    <Content Include="Aula18.html" />
     <Content Include="content\materialize\css\materialize.css" />
     <Content Include="content\materialize\css\materialize.min.css" />
     <Content Include="content\materialize\font\material-design-icons\LICENSE.txt" />
@@ -125,6 +126,8 @@
     <Content Include="Scripts\angular-sanitize.js" />
     <Content Include="Scripts\angular-sanitize.min.js" />
     <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\angular.min - Copy.js" />
+    <Content Include="Scripts\aula18.controller.js" />
     <Content Include="Scripts\aula17.controller.js" />
     <Content Include="Scripts\aula16.controller.js" />
     <Content Include="Scripts\aula15.controller.js" />
