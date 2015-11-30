@@ -1,0 +1,26 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <style type="text/css">
+        .ui-match{
+            background-color:pink;
+        }
+    </style>
+    <title>Aula 22</title>
+    <meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-sanitize.min.js"></script>
+    <script src="Scripts/angular-ui/ui-utils.min.js"></script>
+    <script src="Scripts/aula22.controller.js"></script>
+</head>
+<body>
+    <div ng-controller="Aula22controller" ng-init="busca='';variCPF='';varPhone=''">
+      <input type="search" ng-model="busca" />
+        <div ng-bind-html="texto | highlight:busca"></div>
+        <hr />
+        <input ng-model="variCPF" ui-mask="{{maskCPF}}" />
+        <input ng-model="varPhone" ui-mask="{{maskPhone}}" />
+    </div>
+    
+</body>
+</html>
