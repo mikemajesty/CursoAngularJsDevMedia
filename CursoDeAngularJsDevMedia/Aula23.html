@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Aula 23</title>
+    <meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-ui/ui-utils.min.js"></script>
+    <script src="Scripts/aula23.controller.js"></script>
+</head>
+<body>
+    <div ng-controller="Aula23Controller" ng-init="campo=''">
+        <h1>ui.unique</h1>
+        <button type="button" ng-click="campo=''">Todos</button>
+        <button type="button" ng-click="campo='nome'">Nome</button>
+        <button type="button" ng-click="campo='idade'">Idade</button>
+        <p ng-repeat="usu in usuario | unique:campo">{{usu.nome}}<br />{{usu.idade}}</p>
+        <hr />
+        <h1>ui.validate</h1>
+        <form name="frm">
+            Senha: <input type="password" ng-model="senha" name="senha" placeholder="senha" required />
+            Confirmar: <input ui-validate="'validar($value)'" ui-validate-watch="senha" type="password" ng-model="confirmar" name="confirmar" p placeholder="confirmar senha" required />
+            <button type="submit" ng-disabled="!frm.$valid">Enviar Formulario</button>
+            <div ng-show="!frm.$valid">Preencha todos os campos</div>
+        </form>
+    </div>
+
+</body>
+</html>

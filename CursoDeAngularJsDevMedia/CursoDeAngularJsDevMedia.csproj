@@ -109,6 +109,7 @@
     <Content Include="Aula16.html" />
     <Content Include="Aula17.html" />
     <Content Include="Aula18.html" />
+    <Content Include="Aula23.html" />
     <Content Include="Aula22.html" />
     <Content Include="Aula21.html" />
     <Content Include="Aula20.html" />
@@ -141,6 +142,7 @@
     <Content Include="Scripts\angular-ui\ui-utils.js" />
     <Content Include="Scripts\angular-ui\ui-utils.min.js" />
     <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\aula23.controller.js" />
     <Content Include="Scripts\aula22.controller.js" />
     <Content Include="Scripts\aula21.controlle.js" />
     <Content Include="Scripts\aula20.controller.js" />
