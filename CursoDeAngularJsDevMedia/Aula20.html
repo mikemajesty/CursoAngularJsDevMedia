@@ -1,0 +1,20 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Aula 20</title>
+	<meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-translate.min.js"></script>
+    <script src="Scripts/aula20.controller.js"></script>
+</head>
+<body >
+    <div ng-controller="Aula20controller">
+       <h1 translate="TITULO"></h1>
+        <p translate="PARAGRAFO"></p>
+        <button type="button" translate="BTN_OK"></button><button type="button" translate="BTN_CANCEL"></button>
+        <button type="button" translate="EN_EN" ng-click="setaIdioma('en_en')">Inglês</button>
+        <button type="button" translate="PT_BR" ng-click="setaIdioma('pt_br')">Portugues</button>
+    </div>
+    
+</body>
+</html>

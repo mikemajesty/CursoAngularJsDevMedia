@@ -109,6 +109,7 @@
     <Content Include="Aula16.html" />
     <Content Include="Aula17.html" />
     <Content Include="Aula18.html" />
+    <Content Include="Aula20.html" />
     <Content Include="Aula19.html" />
     <Content Include="content\materialize\css\materialize.css" />
     <Content Include="content\materialize\css\materialize.min.css" />
@@ -128,7 +129,12 @@
     <Content Include="Scripts\angular-route.min.js" />
     <Content Include="Scripts\angular-sanitize.js" />
     <Content Include="Scripts\angular-sanitize.min.js" />
+    <Content Include="Scripts\angular-translate-loader-url.js" />
+    <Content Include="Scripts\angular-translate-loader-url.min.js" />
+    <Content Include="Scripts\angular-translate.js" />
+    <Content Include="Scripts\angular-translate.min.js" />
     <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\aula20.controller.js" />
     <Content Include="Scripts\aula19.controller.js" />
     <Content Include="Scripts\aula18.controller.js" />
     <Content Include="Scripts\aula17.controller.js" />
