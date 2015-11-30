@@ -1,0 +1,24 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Aula 21</title>
+    <meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/angular-file-upload.min.js"></script>
+    <script src="Scripts/aula21.controller.js"></script>
+</head>
+<body>
+    <div ng-controller="Aula21controller">
+        <input type="file" nv-file-select uploader="uploader" multiple />
+        <hr />
+
+        <ul>
+            <li ng-repeat="item in uploader.queue">
+                Nome: <span ng-bind="item.file.name"></span><br />
+                <button type="button" ng-click="item.upload()">Upload Item</button>
+            </li>
+        </ul>
+    </div>
+
+</body>
+</html>

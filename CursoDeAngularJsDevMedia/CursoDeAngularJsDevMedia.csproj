@@ -109,6 +109,7 @@
     <Content Include="Aula16.html" />
     <Content Include="Aula17.html" />
     <Content Include="Aula18.html" />
+    <Content Include="Aula21.html" />
     <Content Include="Aula20.html" />
     <Content Include="Aula19.html" />
     <Content Include="content\materialize\css\materialize.css" />
@@ -122,6 +123,7 @@
     <Content Include="Scripts\angular-animate.min.js" />
     <Content Include="Scripts\angular-cookies.js" />
     <Content Include="Scripts\angular-cookies.min.js" />
+    <Content Include="Scripts\angular-file-upload.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-resource.js" />
     <Content Include="Scripts\angular-resource.min.js" />
@@ -134,6 +136,7 @@
     <Content Include="Scripts\angular-translate.js" />
     <Content Include="Scripts\angular-translate.min.js" />
     <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\aula21.controlle.js" />
     <Content Include="Scripts\aula20.controller.js" />
     <Content Include="Scripts\aula19.controller.js" />
     <Content Include="Scripts\aula18.controller.js" />
