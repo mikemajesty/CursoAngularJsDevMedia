@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Aula 25</title>
+    <meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/select.min.js"></script>
+    <script src="Scripts/aula25.controller.js"></script>
+    <link href="content/bootstrap.css" rel="stylesheet" />
+    <link href="content/select.css" rel="stylesheet" />
+</head>
+<body>
+    <div ng-controller="Aula25Controller">
+        <div class="container">
+            <div class="row">   
+                <div class="col-xs-12">
+                    <div class="well">ui.select</div>
+                    <ui-select ng-model="paisSelecionado.selected" theme="bootstrap" reset-search-input="false">
+                        <ui-select-match placeholder="Digite um nome de um país">
+                            {{paisSelecionado.selected.name}}
+                        </ui-select-match>
+                        <ui-select-choices repeat="pais in paises | filter:$select.search">
+                            {{pais.name}} / {{pais.code}}
+                        </ui-select-choices>
+                    </ui-select>
+                    <h3>Você selecionou {{paisSelecionado.selected | json}} </h3>
+                </div>
+            </div>
+        </div>
+      
+    </div>
+
+</body>
+</html>
