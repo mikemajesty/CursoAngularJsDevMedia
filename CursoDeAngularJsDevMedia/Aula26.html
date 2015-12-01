@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html ng-app="app">
+<head>
+    <title>Aula 25</title>
+    <meta charset="utf-8" />
+    <script src="Scripts/angular.min.js"></script>
+    <script src="Scripts/aula26.controller.js"></script>
+    <script src="Scripts/angular-ui/ui-bootstrap-tpls.min.js"></script>
+    <link href="content/bootstrap.css" rel="stylesheet" />
+    <link href="content/ui-bootstrap-csp.css" rel="stylesheet" />
+</head>
+<body>
+    <div ng-controller="Aula26Controller">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <h1>Accordion</h1>
+                    <input type="text" ng-model="accor.heading"  />
+                    <input type="text" ng-model="accor.conteudo"  />
+                    <input type="button" ng-click="addAccordion()" value="Add"/>
+                    <hr />
+                    <accordion>
+                        <accordion-group heading="Título do accordion">
+                            <p>Conteúdo do accondion</p>
+                        </accordion-group>
+                        <accordion-group heading="Título do elemento">
+                            <p>Conteúdo do conteúdo</p>
+                        </accordion-group>
+                        <accordion-group ng-repeat="g in grupos" heading="{{g.heading}}">
+                            <div class="alert alert-success">
+                                {{g.conteudo}}
+                            </div>
+                        </accordion-group>
+                    </accordion>
+                   
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+</body>
+</html>
