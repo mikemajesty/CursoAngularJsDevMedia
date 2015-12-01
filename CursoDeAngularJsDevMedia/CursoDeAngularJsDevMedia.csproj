@@ -109,6 +109,7 @@
     <Content Include="Aula16.html" />
     <Content Include="Aula17.html" />
     <Content Include="Aula18.html" />
+    <Content Include="Aula24.html" />
     <Content Include="Aula23.html" />
     <Content Include="Aula22.html" />
     <Content Include="Aula21.html" />
@@ -126,6 +127,10 @@
     <Content Include="Scripts\angular-cookies.js" />
     <Content Include="Scripts\angular-cookies.min.js" />
     <Content Include="Scripts\angular-file-upload.min.js" />
+    <Content Include="Scripts\angular-google-maps-street-view.js" />
+    <Content Include="Scripts\angular-google-maps-street-view.min.js" />
+    <Content Include="Scripts\angular-google-maps.js" />
+    <Content Include="Scripts\angular-google-maps.min.js" />
     <Content Include="Scripts\angular-mocks.js" />
     <Content Include="Scripts\angular-resource.js" />
     <Content Include="Scripts\angular-resource.min.js" />
@@ -142,6 +147,7 @@
     <Content Include="Scripts\angular-ui\ui-utils.js" />
     <Content Include="Scripts\angular-ui\ui-utils.min.js" />
     <Content Include="Scripts\angular.js" />
+    <Content Include="Scripts\aula24.controller.js" />
     <Content Include="Scripts\aula23.controller.js" />
     <Content Include="Scripts\aula22.controller.js" />
     <Content Include="Scripts\aula21.controlle.js" />
@@ -210,6 +216,8 @@
     <Content Include="Scripts\app.module.js" />
     <Content Include="Scripts\aula05.appSaudacao.module.js" />
     <Content Include="Scripts\aula06.controller.js" />
+    <Content Include="Scripts\lodash.js" />
+    <Content Include="Scripts\lodash.min.js" />
     <Content Include="Scripts\materialize\materialize.js" />
     <Content Include="Scripts\materialize\materialize.min.js" />
     <Content Include="Web.config" />
