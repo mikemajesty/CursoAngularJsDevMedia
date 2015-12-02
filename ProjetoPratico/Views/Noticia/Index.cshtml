@@ -3,13 +3,13 @@
     ViewBag.Title = "Index";
 }
 
-<div ng-controller="LoginController">
+
 
     <h3>Efetue o Login</h3>
-    <form ng-submit="fazerLogin">
+    <form  method="post" ng-app="app">
 
 
-        @Html.ValidationSummary(false);
+       
         @Html.LabelFor(c => c.User)
         @Html.TextBoxFor(c => c.User, null, new { ng_model = "Login.User" })
         @Html.LabelFor(c => c.Senha)
@@ -20,12 +20,13 @@
     </form>
  
   
-</div>
+
 
 @section scripts{
 
 
     <script src="~/Scripts/angular.min.js"></script>
+<script src="~/Scripts/angular-route.min.js"></script>
     <script src="~/Scripts/Controller/LoginController.js"></script>
 
 }

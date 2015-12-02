@@ -13,13 +13,11 @@ namespace ProjetoPratico.Controllers
             return View();
         }
         [HttpPost]
-        public JsonResult Index(Login Login)
+        public ActionResult Index(Login Login)
         {
-            if (ModelState.IsValid)
-            {
-                return Json(new { result = "Deu Tudo Certo" }, JsonRequestBehavior.AllowGet);
-            }
-            return Json(new { result = "Deu Erro" }, JsonRequestBehavior.AllowGet);
+            return Login.Senha.Equals("admin") && Login.User.Equals("admin") ?
+                   RedirectToAction("Listar") : RedirectToAction("Index");
         }
+
     }
 }

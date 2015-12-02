@@ -4,15 +4,17 @@ function LoginController($scope, $http) {
     $scope.Login = {
         User: "",
         Senha: ""
-    }
-    $scope.fazerLogin = function () {
-        debugger;
-        $http.post("/Noticia/Login", $scope.Login)
-        .success(function (data) {
-            console.log(data);
-            //redireciona o usuario
-        });
-        
-    }
+    };
+
+    //$scope.fazerLogin = function () {
+       
+        //$http.post("/Noticia/Index", $scope.Login)
+        //.success(function (data) {
+        //    debugger;
+        //    console.log(data);
+        //    //redireciona o usuario
+        //});
+        //alert('oi');
+    //}
 }
 app.controller("LoginController", LoginController);
