@@ -1,7 +1,31 @@
-﻿
+﻿@model ProjetoPratico.Models.Login
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<div ng-controller="LoginController">
 
+    <h3>Efetue o Login</h3>
+    <form ng-submit="fazerLogin">
+
+
+        @Html.ValidationSummary(false);
+        @Html.LabelFor(c => c.User)
+        @Html.TextBoxFor(c => c.User, null, new { ng_model = "Login.User" })
+        @Html.LabelFor(c => c.Senha)
+        @Html.TextBoxFor(c => c.Senha, null, new { ng_model = "Login.Senha" })
+        <br />
+        <input type="submit" value="Logar" class="btn btn-default" />
+
+    </form>
+ 
+  
+</div>
+
+@section scripts{
+
+
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/Controller/LoginController.js"></script>
+
+}

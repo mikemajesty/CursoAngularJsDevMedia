@@ -1,24 +1,25 @@
 ﻿using ProjetoPratico.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Mvc;
-
 namespace ProjetoPratico.Controllers
 {
+    [RoutePrefix("Noticia")]
     public class NoticiaController : Controller
     {
         private _DbContext banco;
-        // GET: Noticia
+
+        [HttpGet]
         public ActionResult Index()
+        {            
+            return View();
+        }
+        [HttpPost]
+        public JsonResult Index(Login Login)
         {
-            using (banco = new _DbContext())
+            if (ModelState.IsValid)
             {
-                var b = banco.Noticia.ToList();
-                return View();
+                return Json(new { result = "Deu Tudo Certo" }, JsonRequestBehavior.AllowGet);
             }
-          
+            return Json(new { result = "Deu Erro" }, JsonRequestBehavior.AllowGet);
         }
     }
 }
